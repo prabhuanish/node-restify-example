@@ -2,7 +2,7 @@
 ----
 An example using node-restify to build a REST API service which serves time data for different time zones with a FireBase backend. It includes some basic CRUD operations (GET, POST, DELETE), as well as retrieving and converting time objects to your desired time zone.
 
-<br><br>
+<br>
 Create (or update if it already exists) a new instance of a Time object with either a given UTC time, or the current time.
 
 * **URL**
@@ -30,7 +30,7 @@ Create (or update if it already exists) a new instance of a Time object with eit
   * **Code:** 400 Bad Request <br />
     **Content:** 'Error: Please provide a valid ID.'
     
-<br><br>
+<br>
 Retrive an instance of a Time object by its ID and convert it to your desired time zone. Here are some sample time zones that are supported (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). NOTE: If there is a time zones in the fomat "PLACE1/PLACE2", they will be entered as two different parameters with the slash, i.e. time/set/<\ID>/America/Louisville.
 
 * **Method:**
@@ -58,7 +58,7 @@ Retrive an instance of a Time object by its ID and convert it to your desired ti
   * **Code:** 400 Bad Request <br />
     **Content:** "Error: ID not found."
 
-<br><br>
+<br>
 Delete a given instance of a Time object by its ID
 
 /time/delete/:id
