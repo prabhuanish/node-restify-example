@@ -95,7 +95,7 @@ function TimeController() {
                     console.log(entry);
                     var entry = snapshot.val();
                     ref.remove();
-                    res.send(200, "Success: Time object id " + req_id.toString() + " was removed.");  
+                    res.send(200, "Success: Time object id " + req_id.toString() + " was deleted.");  
                 } else {
                     res.send(400, "Error: Entry does not exist.");
                 }
