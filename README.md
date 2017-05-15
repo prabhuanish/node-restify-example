@@ -1,7 +1,7 @@
 **Simple Node Restify Example REST API**
 ----
 An example using node-restify to build a REST API service which serves time data for different time zones with a FireBase backend. It includes some basic CRUD operations (GET, POST, DELETE), as well as retrieving and converting time objects to your desired time zone.
-----
+
 
 Create (or update if it already exists) a new instance of a Time object with either a given UTC time, or the current time.
 
@@ -85,9 +85,3 @@ Delete a given instance of a Time object by its ID
   
   * **Code:** 400 Bad Request <br />
     **Content:** 'Error: Please provide a valid ID.'  
-  
-    
-  OR
-  
-  * **Code:** 400 Bad Request <br />
-    **Content:** "Error: ID not found."
